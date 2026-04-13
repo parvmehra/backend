@@ -8,4 +8,6 @@ jobs:
         steps:
             - name: Print message
               run: echo "Hello, github actions"
+            - name: print name
+              run: echo "parv"
 
