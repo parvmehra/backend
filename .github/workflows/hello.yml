@@ -10,4 +10,10 @@ jobs:
               run: echo "Hello, github actions"
             - name: print name
               run: echo "parv"
+    say-bye:
+        runs-on: ubuntu latest
+
+        steps:
+            - name: print 
+              run: echo "bye bye" 
 
