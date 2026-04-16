@@ -1,0 +1,11 @@
+name: pr workflow
+
+on: pull_request
+
+jobs:
+    say-hi:
+      runs-on: ubuntu-latest
+
+      steps:
+        - name: print when pull
+          run: echo "pull request accepted"
