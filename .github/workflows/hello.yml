@@ -11,7 +11,7 @@ jobs:
             - name: print name
               run: echo "parv"
     say-bye:
-        needs: say-hello
+        
         runs-on: ubuntu-latest
 
         steps:
