@@ -40,7 +40,7 @@ jobs:
         - name : running test
           run : npm run test 
     
-    deploy app:
+    deploy_app:
       needs : test
       runs-on : ubuntu-latest
 
