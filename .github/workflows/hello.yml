@@ -39,3 +39,20 @@ jobs:
 
         - name : running test
           run : npm run test 
+    
+    deploy app:
+      needs : test
+      runs-on : ubuntu-latest
+
+      steps:
+        - name: Checkout code     //clone repo
+          uses: actions/checkout@v4
+          
+        - name : setup node
+          uses: actions/setup-node@v4
+
+        - name : install dependencies
+          run: npm install
+          
+        - name : deploy app
+          run: node server.js 
